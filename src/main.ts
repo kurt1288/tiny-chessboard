@@ -7,7 +7,7 @@ export default class Chessboard {
     private Board: Board;
     private Settings: Settings;
 
-    constructor(element: string | HTMLElement, config: IConfig) {
+    constructor(element: string | HTMLElement, config?: IConfig) {
         const parent = typeof element === 'string' ? document.getElementById(element) : element;
 
         if (!parent) {
@@ -15,7 +15,7 @@ export default class Chessboard {
         }
 
         parent.appendChild(this.container);
-        this.Settings = new Settings(config ?? {});
+        this.Settings = new Settings(config);
         this.Board = new Board(this.Settings);
         this.CreateBoard(this.container);
     }
