@@ -12,6 +12,10 @@ It is not capable how determining what moves are legal, whether a position is in
 
 If you need the ability to generate moves, position detection, etc., consider using the [chess.js](https://github.com/jhlywa/chess.js) library.
 
+## Examples
+
+Examples can be found [here](https://kurt1288.github.io/tiny-chessboard/examples/).
+
 ## Installation
 
 You can add tiny-chessboard to your project using any of the following:
