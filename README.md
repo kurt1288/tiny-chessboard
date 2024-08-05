@@ -16,7 +16,7 @@ If you need the ability to generate moves, position detection, etc., consider us
 
 You can add tiny-chessboard to your project using any of the following:
 
-1. Download the latest file [here](https://github.com/kurt1288/tiny-chessboard/latest).
+1. Download the latest file [here](https://github.com/kurt1288/tiny-chessboard/releases/latest).
 2. Install with `npm install tiny-chessboard`
 3. From a CDN
 
