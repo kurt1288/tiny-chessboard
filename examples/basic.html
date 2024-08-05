@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tiny-chessboard.js | Basic Example</title>
+    <style>
+        html, body {
+            height: 100%;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            padding: 0 2rem;
+            background-color: #f2f2f2;
+            color: #1a1a1a;
+        }
+
+        .container {
+            float: left;
+            margin: 0 2rem;
+        }
+
+        .chessboard {
+            width: 400px;
+        }
+
+        pre {
+            width: fit-content;
+            background-color: #282828;
+            color: #ececec;
+            padding: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <h1>tiny-chessboard.js</h1>
+    <h2>Basic Initialization</h2>
+    <div class="container">
+        <h4>No config</h4>
+        <div id="chessboard" class="chessboard"></div>
+<pre>
+<code>
+import Chessboard from "./tiny-chessboard.min.js";
+
+const board = new Chessboard("chessboard");
+</code>
+</pre>
+    </div>
+    <div class="container">
+        <h4>Config with position</h4>
+        <div id="chessboard2" class="chessboard"></div>
+<pre>
+<code>
+import Chessboard from "./tiny-chessboard.min.js";
+
+const board = new Chessboard("chessboard", {
+    position: "rnbqk2r/pppp1ppp/4pn2/8/1bPP4/2N5/PP2PPPP/R1BQKBNR w KQkq - 2 4"
+});
+</code>
+</pre>
+    </div>
+    <script type="module">
+        import Chessboard from "./tiny-chessboard.min.js";
+
+        const board = new Chessboard("chessboard");
+        const board2 = new Chessboard("chessboard2", {
+            position: "rnbqk2r/pppp1ppp/4pn2/8/1bPP4/2N5/PP2PPPP/R1BQKBNR w KQkq - 2 4",
+        })
+    </script>
+</body>
+</html>

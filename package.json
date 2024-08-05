@@ -1,0 +1,19 @@
+{
+  "name": "tiny-chessboard",
+  "version": "1.0.0",
+  "license": "MIT",
+  "browser": "./dist/tiny-chessboard.min.js",
+  "scripts": {
+    "start": "node ./build/watch.mjs",
+    "build": "node ./build/build.mjs"
+  },
+  "author": "Kurt Peters",
+  "description": "A small, lightweight, and mobile friendly JavaScript chessboard library without any dependencies.",
+  "repository": "github:kurt1288/tiny-chessboard",
+  "type": "module",
+  "devDependencies": {
+    "esbuild": "^0.23.0",
+    "esbuild-minify-templates": "^0.11.0",
+    "typescript": "^5.5.4"
+  }
+}

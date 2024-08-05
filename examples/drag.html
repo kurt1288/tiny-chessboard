@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tiny-chessboard.js | Draggable pieces</title>
+    <style>
+        html, body {
+            height: 100%;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            padding: 0 2rem;
+            background-color: #f2f2f2;
+            color: #1a1a1a;
+        }
+
+        #chessboard {
+            width: 400px;
+        }
+
+        pre {
+            width: fit-content;
+            background-color: #282828;
+            color: #ececec;
+            padding: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <h1>tiny-chessboard.js</h1>
+    <h2>Draggable Pieces</h2>
+    <p>Note that there is no validation. Any piece can be moved anywhere.</p>
+    <div id="chessboard"></div>
+<pre>
+<code>
+import Chessboard from "./tiny-chessboard.min.js";
+
+const board = new Chessboard("chessboard", {
+    draggable: true,
+});
+</code>
+</pre>
+    <script type="module">
+        import Chessboard from "./tiny-chessboard.min.js";
+
+        const board = new Chessboard("chessboard", {
+            draggable: true,
+        });
+    </script>
+</body>
+</html>
